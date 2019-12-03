@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|Domine|Montserrat&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+
+html, body{
+	min-height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+
+}
+
+.navbar h1 a{
+    font-size: 40px;
+    font-family: 'Domine';
+    padding-right: 0;
+}
+
+
+.navbar{
+    background: #CCC9E7;
+    position: fixed;
+    display: block;
+    width: 100%;
+    transition:top 0.3s;
+}
+
+.navbar a{
+    float: right;
+    display: block;
+    padding: 35px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-family: 'Domine';
+}
+
+.navbar .logo a{
+    color: black;
+}
+.item a{
+    color: #2E3138;
+}
+
+a:hover{
+    color: #6C6F7D;
+}
+
+.navbar .active{
+    color: #744253;
+}
+
+/* Text underline from https://codepen.io/jstn/pen/zuDst */
+
+a {
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    position: relative;
+  }
+
+   a:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #C78283;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+   a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.logo{
+    float: left;
+}
+
+nav{
+    float: right;  
+} 
+
+.flex-container{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    padding : 200px 100px 100px 100px ;
+    flex-direction: column;
+} 
+
+.item{
+    padding: 30px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+footer{
+    background-color: #CCC9E7;
+    padding: 70px;
+}
+
+footer img{
+    float: right;
+    width: 7%;
+}

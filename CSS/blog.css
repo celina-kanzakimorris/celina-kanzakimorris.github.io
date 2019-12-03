@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|Domine|Montserrat&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+
+html, body{
+	min-height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.navbar .active{
+    color: #744253;
+}
+
+.navbar h1 a{
+    font-size: 40px;
+    font-family: 'Domine';
+    padding-right: 0;
+}
+
+.navbar{
+    background: #CCC9E7;
+    position: fixed;
+    display: block;
+    width: 100%;
+    transition:top 0.3s;
+}
+
+.navbar a{
+    float: right;
+    display: block;
+    padding: 35px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-family: 'Domine';
+}
+
+.navbar .logo a{
+    color: black;
+}
+
+a:hover{
+    color: #6C6F7D;
+}
+
+/* Text underline from https://codepen.io/jstn/pen/zuDst */
+
+a {
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    position: relative;
+  }
+
+   a:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #C78283;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+   a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.logo{
+    float: left;
+}
+
+nav{
+    float: right;  
+}
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 300px 100px;
+}
+
+.item-1{
+    padding-left: 100px;
+    background: #D7BEA8;
+    border: solid;
+    border-width: 1px;
+    font-family: 'Domine', serif;
+    grid-row: 1;
+    grid-column: 1/span 3;
+}
+
+.item-2{
+    font-family: 'Montserrat';
+    grid-row: 1;
+    grid-column: 2/span 2;
+}
+
+footer{
+    background-color: #CCC9E7;
+    padding: 70px;
+}
+
+footer img{
+    float: right;
+    width: 7%;
+}
