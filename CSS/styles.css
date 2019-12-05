@@ -59,6 +59,12 @@ a:hover{
     color: #6C6F7D;
 }
 
+.intro-blurb{
+    padding: 100px 300px;
+    font-size: 45px;
+    background-color: #96BDC6;
+}
+
 /* Text underline from https://codepen.io/jstn/pen/zuDst */
 
 a {
